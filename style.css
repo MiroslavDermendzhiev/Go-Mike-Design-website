@@ -662,7 +662,7 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .hero-bloc-text {
@@ -1088,4 +1088,9 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.introduction-paragraph {
+    color: black !important;
+    font-size: 37px !important;
 }
