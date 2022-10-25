@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -285,6 +289,19 @@ a:hover {
 
 #bloc-2-services p {
     font-size: 11px;
+    color: black !important;
+
+    /******************************************************/
+}
+
+blockquote {
+    border: 0px;
+    font-style: italic;
+}
+
+.quote,
+.quote-autor {
+    font-size: 14px !important;
 }
 
 .navbar {
@@ -363,6 +380,8 @@ a:hover {
 }
 
 @media (min-width: 768px) {
+
+
     .site-navigation {
         position: absolute;
         top: 50%;
@@ -374,6 +393,11 @@ a:hover {
     .nav>li .dropdown-menu a,
     .nav>li .dropdown-menu a:hover {
         color: #484848;
+    }
+
+    .navbar-nav>li>a {
+        color: black !important;
+        font-size: 22px;
     }
 
     .nav-invert .site-navigation {
@@ -402,6 +426,7 @@ a:hover {
         right: 0;
         margin-right: 0px;
         margin-top: 20px;
+
     }
 
     .nav-center.mini-nav .navbar-toggle {
@@ -773,6 +798,7 @@ h4 {
     font-size: 15px;
     font-weight: 700;
     text-transform: uppercase;
+    color: black !important;
 }
 
 .bgc-white {
@@ -831,11 +857,11 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign {
-    background-image: url("img/atlanta%20made%20sign.jpg");
+    background-image: url("img/atlanta\ made\ sign-webp.webp");
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta\ made\ sign\ orange-upgraded.jpg");
+    background-image: url("img/atlanta\ made\ sign\ orange-upgraded.webp");
 }
 
 @media (max-width: 1024px) {
@@ -863,13 +889,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -891,8 +917,8 @@ h4 {
     }
 
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 
     .bloc-group,
@@ -904,8 +930,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: env(safe-area-inset-left);
+        padding-right: env(safe-area-inset-right);
     }
 }
 
@@ -913,6 +939,10 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+
+    .page2-home-button {
+        color: black !important;
     }
 
     h1,
@@ -1090,7 +1120,47 @@ h4 {
     }
 }
 
-.introduction-paragraph {
+.previous-work,
+.heading-paragraph {
     color: black !important;
     font-size: 37px !important;
+}
+
+.text-center {
+    /* color: !important; */
+}
+
+.go-black {
+    color: black !important;
+}
+
+.gomike-logo {
+    width: 215px;
+    height: 40px;
+}
+
+.mike-avatar {
+    width: 100px;
+    height: 103px;
+}
+
+.img-dog,
+.img-muffins,
+.img-photography,
+.img-legal {
+    width: 270px;
+    height: 270px;
+}
+
+.label {
+    color: black !important;
+}
+
+.form-group {
+    margin: 5px 0px;
+    max-width: 95%;
+}
+
+.img-container {
+    text-align: -webkit-center !important;
 }
