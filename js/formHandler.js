@@ -80,4 +80,3 @@ $(function()
 	 	return path
 	 }
 });
-

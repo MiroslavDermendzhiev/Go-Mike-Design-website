@@ -1,7 +1,7 @@
 /*! jQuery v2.1.0 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */ ! function(a, b) {
     "object" == typeof module && "object" == typeof module.exports ? module.exports = a.document ? b(a, !0) : function(a) {
-        if (!a.document) throw new Error("jQuery requires a window with a document");
-        return b(a)
+    //     if (!a.document) throw new Error("jQuery requires a window with a document");
+    //     return b(a)
     } : b(a)
 }("undefined" != typeof window ? window : this, function(a, b) {
     var c = [],
@@ -22,7 +22,7 @@
         p = /^-ms-/,
         q = /-([\da-z])/gi,
         r = function(a, b) {
-            return b.toUpperCase()
+            // return b.toUpperCase()
         };
     o.fn = o.prototype = {
         jquery: n,
@@ -30,7 +30,7 @@
         selector: "",
         length: 0,
         toArray: function() {
-            return d.call(this)
+            // return d.call(this)
         },
         get: function(a) {
             return null != a ? 0 > a ? this[a + this.length] : this[a] : d.call(this)
@@ -43,12 +43,12 @@
             return o.each(this, a, b)
         },
         map: function(a) {
-            return this.pushStack(o.map(this, function(b, c) {
-                return a.call(b, c, b)
-            }))
+        //     return this.pushStack(o.map(this, function(b, c) {
+        //         return a.call(b, c, b)
+        //     }))
         },
         slice: function() {
-            return this.pushStack(d.apply(this, arguments))
+        //     return this.pushStack(d.apply(this, arguments))
         },
         first: function() {
             return this.eq(0)
@@ -256,7 +256,7 @@
                     a.length = c - 1
                 }
             }
-        }
+         }
 
         function db(a, b, d, e) {
             var f, g, h, i, j, m, p, q, u, v;
@@ -363,7 +363,7 @@
             var b, e = a ? a.ownerDocument || a : t,
                 g = e.defaultView;
             return e !== l && 9 === e.nodeType && e.documentElement ? (l = e, m = e.documentElement, n = !f(e), g && g !== g.top && (g.addEventListener ? g.addEventListener("unload", function() {
-                k()
+               k()
             }, !1) : g.attachEvent && g.attachEvent("onunload", function() {
                 k()
             })), c.attributes = gb(function(a) {
@@ -379,7 +379,8 @@
                     var c = b.getElementById(a);
                     return c && c.parentNode ? [c] : []
                 }
-            }, d.filter.ID = function(a) {
+            }, 
+            d.filter.ID = function(a) {
                 var b = a.replace(ab, bb);
                 return function(a) {
                     return a.getAttribute("id") === b
@@ -391,7 +392,7 @@
                     return c && c.value === b
                 }
             }), d.find.TAG = c.getElementsByTagName ? function(a, b) {
-                return typeof b.getElementsByTagName !== A ? b.getElementsByTagName(a) : void 0
+               return typeof b.getElementsByTagName !== A ? b.getElementsByTagName(a) : void 0
             } : function(a, b) {
                 var c, d = [],
                     e = 0,
@@ -402,8 +403,9 @@
                 }
                 return f
             }, d.find.CLASS = c.getElementsByClassName && function(a, b) {
-                return typeof b.getElementsByClassName !== A && n ? b.getElementsByClassName(a) : void 0
-            }, p = [], o = [], (c.qsa = Y.test(e.querySelectorAll)) && (gb(function(a) {
+            return typeof b.getElementsByClassName !== A && n ? b.getElementsByClassName(a) : void 0
+            }, 
+            p = [], o = [], (c.qsa = Y.test(e.querySelectorAll)) && (gb(function(a) {
                 a.innerHTML = "<select t=''><option selected=''></option></select>", a.querySelectorAll("[t^='']").length && o.push("[*^$]=" + K + "*(?:''|\"\")"), a.querySelectorAll("[selected]").length || o.push("\\[" + K + "*(?:value|" + J + ")"), a.querySelectorAll(":checked").length || o.push(":checked")
             }), gb(function(a) {
                 var b = e.createElement("input");
