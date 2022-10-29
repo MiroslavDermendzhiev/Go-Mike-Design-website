@@ -21,3 +21,15 @@ BrowserMatch ^Mozilla/4.0[678] no-gzip
 BrowserMatch bMSIE !no-gzip !gzip-only-text/html
 
 </IfModule>
+
+<IfModule mod_headers.c>
+<filesMatch "\.(webp)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+</IfModule>
+
+<IfModule mod-expires.c>
+ExpiresActive On
+ExpiresByType image/webp "access plus 1 month"
+ExpiresDefault "access plus 2 days"
+</IfModule>
