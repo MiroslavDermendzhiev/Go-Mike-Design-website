@@ -1167,6 +1167,8 @@ h4 {
 
 .label {
     color: black !important;
+    white-space: normal;
+    padding: 0px;
 }
 
 
@@ -1181,4 +1183,9 @@ h4 {
 
 .more-information {
     color: black !important;
+    margin-top: 50px !important;
+}
+
+.col-sm-6-contact {
+    float: none;
 }
