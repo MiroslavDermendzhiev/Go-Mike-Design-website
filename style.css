@@ -9,13 +9,18 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 
 a,
 button {
     transition: all .3s ease-in-out;
     outline: none !important;
+    text-decoration: none;
 }
+
+/*******************************************************************/
+
 
 a:hover {
     text-decoration: none;
@@ -279,12 +284,15 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 .row.row-no-gutters>[class^="col-"],
 .row.row-no-gutters>[class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
+
 }
 
 #bloc-2-services p {
@@ -379,6 +387,10 @@ blockquote {
     z-index: 2;
 }
 
+.contact-nav {
+    list-style: none;
+}
+
 @media (min-width: 768px) {
 
 
@@ -398,7 +410,9 @@ blockquote {
     .navbar-nav>li>a {
         color: black !important;
         font-size: 22px;
+
     }
+
 
     .nav-invert .site-navigation {
         left: 0;
@@ -769,6 +783,7 @@ h4 {
 
 .white {
     color: #FFFFFF !important;
+    text-align: center;
 }
 
 .portfolio-thumb {
@@ -1154,6 +1169,7 @@ h4 {
     color: black !important;
 }
 
+
 .form-group {
     margin: 5px 0px;
     max-width: 95%;
@@ -1161,4 +1177,8 @@ h4 {
 
 .img-container {
     text-align: -webkit-center !important;
+}
+
+.more-information {
+    color: black !important;
 }
